@@ -294,7 +294,7 @@ async def common_message_handler(
     ticket_id = insert_ticket_into_db(Ticket(None, received_message_text))
 
     await context.bot.send_message(
-        text=rf"✅ Ticket \[/{ticket_id}] added!",
+        text=rf"✅ Ticket \[/r{ticket_id}] added!",
         chat_id=chat_id,
         parse_mode=ParseMode.MARKDOWN
     )
