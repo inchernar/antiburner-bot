@@ -53,7 +53,7 @@ def is_authorized():
             update = args[0]
             context = args[1]
 
-            if update.effective_user.id in settings.ALLOWED_USERS:
+            if update.effective_user.id == settings.ALLOWED_USER_ID:
                 return await func(*args, **kwargs)
 
             logging.warning(f"Not authorized user {update.effective_user.id}")
