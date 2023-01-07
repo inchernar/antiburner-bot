@@ -42,3 +42,11 @@ await context.bot.edit_message_text(
 	message_id=m_id # from store
 )
 ```
+
+## Команды бота
+
+```
+board - Вывести доску
+wide_board - Вывести широкую доску
+# ticket_delete - Удаление указанных записей
+```
