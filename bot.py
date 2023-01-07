@@ -175,7 +175,6 @@ def make_board(tickets: list[Ticket], wide: bool = False) -> str:
 
         board_line = rf"\{ticket_link}{separator}`{ticket_text}{postfix}`"
         board.append(board_line)
-    board.append("a")
     return "\n".join(board)
 
 
