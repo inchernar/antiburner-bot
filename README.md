@@ -24,7 +24,7 @@ received_message_id = update.message.message_id
 send_message = await context.bot.send_message(
 	chat_id=update.effective_chat.id,
 	text="text of message",
-	parse_mode=ParseMode.MARKDOWN_V2
+	parse_mode=ParseMode.MARKDOWN
 )
 ```
 
